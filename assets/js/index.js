@@ -104,7 +104,6 @@ $(document).ready(function () {
         else if(operatorResult === "times"){
             operatorResult = times
         }
-        operatorResult = operatorResult.slice(Math.max(operatorResult.length - 5, 1))
         firstNumberResult = snapshot.val().firstNumber;
         secondNumberResult = snapshot.val().secondNumber;
         resultResult = snapshot.val().result;
@@ -127,8 +126,8 @@ $(document).ready(function () {
                     "</tr>")
                 
         // res = Array(4).fill(res)
-        console.log(res[0])
-       $('#div').prepend(res[0]);
+        console.log(operatorResult)
+       $('#div').prepend(res);
        
     
   
